@@ -99,9 +99,12 @@ if (!customElements.get("desk-tracker-card")) {
         <style>
           :host { display: block; }
           .card {
-            background: var(--ha-card-background, var(--card-background-color, #fff));
+            background: rgba(var(--rgb-card-background-color, 255,255,255), 0.55);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
             border-radius: var(--ha-card-border-radius, 12px);
-            box-shadow: var(--ha-card-box-shadow, 0 2px 8px rgba(0,0,0,.12));
+            border: 1px solid rgba(255,255,255,0.25);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.12);
             padding: 16px 18px 14px;
             font-family: var(--paper-font-body1_-_font-family, sans-serif);
             color: var(--primary-text-color, #1a1a1a);
