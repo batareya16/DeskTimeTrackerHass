@@ -99,7 +99,7 @@ if (!customElements.get("desk-tracker-card")) {
         <style>
           :host { display: block; }
           .card {
-            background: rgba(var(--rgb-card-background-color, 255,255,255), 0.55);
+            background: rgba(255,255,255,0.15);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
             border-radius: var(--ha-card-border-radius, 12px);
