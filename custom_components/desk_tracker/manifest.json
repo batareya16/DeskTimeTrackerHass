@@ -1,0 +1,12 @@
+{
+  "domain": "desk_tracker",
+  "name": "Desk Tracker",
+  "version": "1.0.0",
+  "documentation": "https://github.com/YOUR_USERNAME/desk-tracker-ha",
+  "issue_tracker": "https://github.com/YOUR_USERNAME/desk-tracker-ha/issues",
+  "codeowners": [],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "dependencies": ["recorder"],
+  "requirements": []
+}

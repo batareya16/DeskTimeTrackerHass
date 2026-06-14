@@ -1,0 +1,6 @@
+{
+  "name": "Desk Tracker",
+  "render_readme": true,
+  "domains": ["sensor"],
+  "iot_class": "local_polling"
+}

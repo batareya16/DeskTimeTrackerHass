@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Desk Tracker",
+        "description": "Track how long your monitor is on each day using a smart plug power sensor.",
+        "data": {
+          "entity_id": "Power Sensor Entity",
+          "power_threshold": "Power threshold (W)",
+          "daily_goal": "Daily goal (hours)"
+        },
+        "data_description": {
+          "entity_id": "The entity ID of your smart plug power sensor, e.g. sensor.monitor_socket_power",
+          "power_threshold": "Power above this value means the monitor is on. Default: 0.5 W",
+          "daily_goal": "Your daily desk time target in hours, e.g. 6"
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "Entity not found. Please check the entity ID.",
+      "unknown": "Unexpected error. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "Desk Tracker is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Desk Tracker settings",
+        "data": {
+          "entity_id": "Power Sensor Entity",
+          "power_threshold": "Power threshold (W)",
+          "daily_goal": "Daily goal (hours)"
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "Entity not found.",
+      "unknown": "Unexpected error."
+    }
+  }
+}
